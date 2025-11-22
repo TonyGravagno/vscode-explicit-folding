@@ -1,10 +1,11 @@
-import { type ExplicitFoldingConfig, type ExplicitFoldingHub } from '@zokugun/vscode.explicit-folding-api';
+
 import vscode, { type OutputChannel } from 'vscode';
 import pkg from '../package.json';
 import { nudge } from './commands/nudge.js';
 import { FoldingHub } from './folding-hub.js';
 import { FoldingProvider } from './folding-provider.js';
 import { RouteProvider } from './route-provider.js';
+import { type ExplicitFoldingConfig, type ExplicitFoldingHub } from './types.js';
 import { Disposable } from './utils/disposable.js';
 import { hasValue } from './utils/has-value.js';
 import { EXTENSION_ID, getContext, getDebugChannel, setupSettings } from './utils/settings.js';

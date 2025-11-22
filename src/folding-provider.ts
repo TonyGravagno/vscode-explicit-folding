@@ -1,7 +1,7 @@
 import { basename } from 'path';
 import { escape, parse, translate, visit, Flavor, type Token, TokenType } from '@daiyam/regexp';
-import { type ExplicitFoldingConfig } from '@zokugun/vscode.explicit-folding-api';
 import { commands, FoldingRange, FoldingRangeKind, type FoldingRangeProvider, type OutputChannel, type ProviderResult, type TextDocument, window } from 'vscode';
+import { type ExplicitFoldingConfig } from './types.js';
 
 type EndMatch = {
 	index: number;

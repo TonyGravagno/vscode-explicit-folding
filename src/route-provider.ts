@@ -1,8 +1,8 @@
 import { basename } from 'path';
-import type { ExplicitFoldingConfig } from '@zokugun/vscode.explicit-folding-api';
 import { type IMinimatch, Minimatch } from 'minimatch';
 import type { FoldingRange, FoldingRangeProvider, OutputChannel, ProviderResult, TextDocument } from 'vscode';
 import { FoldingProvider } from './folding-provider.js';
+import type { ExplicitFoldingConfig } from './types.js';
 
 type Route = {
 	label: string;

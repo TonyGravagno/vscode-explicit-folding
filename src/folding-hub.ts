@@ -1,4 +1,4 @@
-import type { ExplicitFoldingConfig, ExplicitFoldingHub } from '@zokugun/vscode.explicit-folding-api';
+import type { ExplicitFoldingConfig, ExplicitFoldingHub } from './types.js';
 
 export class FoldingHub implements ExplicitFoldingHub {
 	private perLanguages: Record<string, ExplicitFoldingConfig[] | undefined> = {};
